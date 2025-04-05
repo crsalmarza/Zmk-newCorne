@@ -161,7 +161,7 @@ layers:
   - (
   - )
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
+  - RGB EFF
   - 'ON'
   - RGB HUI
   - RGB SAI
