@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - {t: \, h: '$$mdi:keyboard-esc$$', s: '|'}
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
+  - '&td0'
   - A
   - S
   - D
@@ -29,20 +29,20 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '`', h: LGUI, s: '~'}
-  - {t: /, s: '?'}
-  - z
+  - $$mdi:apple-keyboard-control$$
+  - Z
   - X
   - C
   - V
+  - B
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
-  - B
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - Shift
+  - {t: /, s: '?'}
+  - $$mdi:keyboard-esc$$
   - LGUI
   - NUMBER
   - {t: '$$mdi:keyboard-space$$', h: Fn}
