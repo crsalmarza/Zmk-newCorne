@@ -193,6 +193,6 @@ layers:
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {t: '-', h: CODE, s: _, type: held alternate}
   - {type: held}
-  - {t: '$$mdi:keyboard-return$$', h: Symbol | RGB, type: held alternate}
+  - {type: held alternate}
   - {t: '=', h: FN | BT | Bootloader | Media, s: +, type: held alternate}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
