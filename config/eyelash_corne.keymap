@@ -68,11 +68,11 @@
         lower_layer {
             display-name = "CODE";
             bindings = <
-&trans  &kp N1    &kp N2   &kp N3    &kp N4    &kp N5                               &kp UP                &kp N6     &kp N7    &kp N8     &kp N9   &kp N0   &trans
-&trans  &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp CARET  &kp AMPS  &kp ASTRK  &kp DEL  &trans   &kp DEL
-&trans  &trans    &trans   &trans    &trans    &trans     &kp SPACE                 &kp DOWN              &kp LPAR   &kp RPAR  &none      &trans   &trans   &trans
-                           &trans    &trans    &trans                                                     &trans     &trans     &trans
-            >;
+&mt ESC BSLH    &kp N1    &kp N2   &kp N3          &kp N4    &kp N5                                 &kp UP                &kp N6       &kp N7       &kp N8         &kp N9     &kp N0    &kp BSPC
+&kp TAB         &kp EXCL  &kp AT   &kp HASH        &kp DLLR  &kp PRCNT                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp CARET    &kp AMPS     &kp ASTRK      &kp DEL    &kp SEMI  &kp SQT
+&mt LGUI GRAVE  &kp FSLH  &kp Z    &kp X           &kp C     &kp V        &kp SPACE                 &kp DOWN              &kp LPAR     &kp RPAR     &kp MINUS      &kp COMMA  &kp DOT   &kp RIGHT_SHIFT
+                                   &mt LCTRL LBKT  &trans    &lt 3 SPACE                                                  &lt 3 ENTER  &lt 2 EQUAL  &mt RALT RBKT
+             >;
             sensor-bindings = <&scroll_encoder>;
         };
 
