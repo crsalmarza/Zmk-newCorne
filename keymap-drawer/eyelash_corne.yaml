@@ -45,9 +45,9 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {t: '-', h: CODE, s: _}
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - {t: '=', h: FN | BT | Bootloader |Media, s: +}
+  - {t: '$$mdi:keyboard-space$$', h: Symbol | RGB}
+  - {t: '$$mdi:keyboard-return$$', h: Symbol | RGB}
+  - {t: '=', h: FN | BT | Bootloader | Media, s: +}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   CODE:
   - {t: \, h: '$$mdi:keyboard-esc$$', s: '|'}
@@ -94,11 +94,11 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {type: held}
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - {t: '=', h: FN | BT | Bootloader |Media, s: +}
+  - {t: '$$mdi:keyboard-space$$', h: Symbol | RGB}
+  - {t: '$$mdi:keyboard-return$$', h: Symbol | RGB}
+  - {t: '=', h: FN | BT | Bootloader | Media, s: +}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
-  FN | BT | Bootloader |Media:
+  FN | BT | Bootloader | Media:
   - F1
   - F2
   - F3
@@ -143,56 +143,56 @@ layers:
   - $$mdi:progress-download$$
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {t: '-', h: CODE, s: _, type: held alternate}
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - {t: '$$mdi:keyboard-space$$', h: Symbol | RGB}
+  - {t: '$$mdi:keyboard-return$$', h: Symbol | RGB}
   - {type: held}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
-  Fn:
-  - '&studio_unlock'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:progress-download$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - PRINTSCREEN
-  - F12
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
-  - $$mdi:volume-off$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - SCROLLLOCK
-  - PAUSE BREAK
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
-  - {type: held}
-  - {type: held alternate}
-  - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  Symbol | RGB:
+  - {t: \, h: '$$mdi:keyboard-esc$$', s: '|'}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - $$mdi:arrow-up-bold$$
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - RGB EFF
+  - 'ON'
+  - RGB HUI
+  - RGB SAI
+  - RGB BRI
+  - RGB SPI
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - '&bl BL_ON'
+  - '&bl BL_INC'
+  - '&bl BL_CYCLE'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - {t: '`', h: LGUI, s: '~'}
+  - 'OFF'
+  - RGB HUD
+  - RGB SAD
+  - RGB BRD
+  - RGB SPD
+  - $$mdi:keyboard-space$$
+  - $$mdi:arrow-down-bold$$
+  - '&bl BL_OFF'
+  - '&bl BL_DEC'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
+  - {t: '-', h: CODE, s: _, type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', h: Symbol | RGB, type: held}
+  - {t: '$$mdi:keyboard-return$$', h: Symbol | RGB, type: held alternate}
+  - {t: '=', h: FN | BT | Bootloader | Media, s: +, type: held alternate}
+  - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
