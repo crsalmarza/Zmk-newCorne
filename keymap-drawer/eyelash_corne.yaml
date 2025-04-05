@@ -47,7 +47,7 @@ layers:
   - {t: '-', h: CODE, s: _}
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - {t: '=', h: SYMBOL, s: +}
+  - {t: '=', h: FN | BT | Bootloader |Media, s: +}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   CODE:
   - {t: \, h: '$$mdi:keyboard-esc$$', s: '|'}
@@ -96,57 +96,57 @@ layers:
   - {type: held}
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - {t: '=', h: SYMBOL, s: +}
+  - {t: '=', h: FN | BT | Bootloader |Media, s: +}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
-  SYMBOL:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:bluetooth-off$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: \, s: '|'}
-  - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - OUT USB
-  - OUT BLE
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB5'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
-  - '~'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
-  - $$mdi:keyboard-space$$
+  FN | BT | Bootloader |Media:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - $$mdi:arrow-up-bold$$
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - BT CLR ALL
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - $$mdi:volume-off$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:brightness-5$$
+  - $$mdi:brightness-7$$
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - $$mdi:progress-download$$
+  - $$mdi:bluetooth-off$$
+  - '&BT_SEL'
+  - OUT BLE
+  - OUT USB
+  - '&studio_unlock'
+  - $$mdi:keyboard-space$$
+  - $$mdi:arrow-down-bold$$
+  - PREV
+  - PP
+  - NEXT
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
+  - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
+  - {t: '-', h: CODE, s: _, type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', h: Fn}
+  - {t: '$$mdi:keyboard-return$$', h: Fn}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   Fn:
   - '&studio_unlock'
   - F1
@@ -194,5 +194,5 @@ layers:
   - {type: held alternate}
   - {type: held}
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
