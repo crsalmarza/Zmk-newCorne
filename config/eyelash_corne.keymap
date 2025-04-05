@@ -91,10 +91,10 @@
         layer_3 {
             display-name = "Symbol | RGB";
             bindings = <
-&mt ESC BSLH     &kp EXCL     &kp AT           &kp HASH         &kp DLLR         &kp PRCNT                                  &kp UP                &kp CARET    &kp AMPS     &kp ASTRK      &kp LPAR   &kp RPAR  &kp BSPC
-&rgb_ug RGB_EFF  &rgb_ug ON   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI                  &kp LEFT  &kp ENTER  &kp RIGHT  &bl BL_ON    &bl BL_INC   &bl BL_CYCLE   &none      &kp SEMI  &kp SQT
-&mt LGUI GRAVE   &rgb_ug OFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &kp SPACE                 &kp DOWN              &bl BL_OFF   &bl BL_DEC   &none          &kp COMMA  &kp DOT   &kp RIGHT_SHIFT
-                                               &mt LCTRL LBKT   &lt 1 MINUS      &lt 3 SPACE                                                      &lt 3 ENTER  &lt 2 EQUAL  &mt RALT RBKT
+&mt ESC BSLH    &kp EXCL     &kp AT           &kp HASH         &kp DLLR         &kp PRCNT                                  &kp UP                &kp CARET    &kp AMPS     &kp ASTRK      &kp LPAR   &kp RPAR  &kp BSPC
+&rgb_ug RGB_EFF &rgb_ug ON   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI                  &kp LEFT  &kp ENTER  &kp RIGHT  &bl BL_ON    &bl BL_INC   &bl BL_CYCLE   &none      &kp SEMI  &kp SQT
+&mt LGUI GRAVE  &rgb_ug OFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &kp SPACE                 &kp DOWN              &bl BL_OFF   &bl BL_DEC   &none          &kp COMMA  &kp DOT   &kp RIGHT_SHIFT
+                                            &mt LCTRL LBKT   &lt 1 MINUS      &lt 3 SPACE                                                      &lt 3 ENTER  &lt 2 EQUAL  &mt RALT RBKT
              >;
             sensor-bindings = <&scroll_encoder>;
         };
