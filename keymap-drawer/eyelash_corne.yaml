@@ -44,10 +44,10 @@ layers:
   - {t: ., s: '>'}
   - Shift
   - LGUI
-  - {t: '-', h: NUMBER, s: _}
+  - NUMBER
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - {t: '=', h: SYMBOL, s: +}
+  - SYMBOL
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
