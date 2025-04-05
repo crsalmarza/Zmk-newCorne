@@ -50,7 +50,7 @@ layers:
   - {t: '=', h: SYMBOL, s: +}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   CODE:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, h: '$$mdi:keyboard-esc$$', s: '|'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -62,8 +62,8 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
   - '!'
   - '@'
   - '#'
@@ -76,28 +76,28 @@ layers:
   - '&'
   - '*'
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - {t: '`', h: LGUI, s: '~'}
+  - {t: /, s: '?'}
+  - Z
+  - X
+  - C
+  - V
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - (
   - )
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '-', s: _}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-space$$', h: Fn}
+  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - {t: '=', h: SYMBOL, s: +}
+  - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
@@ -142,7 +142,7 @@ layers:
   - '|'
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
@@ -191,7 +191,7 @@ layers:
   - SCROLLLOCK
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {type: held}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
