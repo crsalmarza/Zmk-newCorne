@@ -42,7 +42,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - $$mdi:apple-keyboard-shift$$
+  - B
   - LGUI
   - NUMBER
   - {t: '$$mdi:keyboard-space$$', h: Fn}
