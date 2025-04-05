@@ -192,7 +192,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {t: '-', h: CODE, s: _, type: held alternate}
-  - {t: '$$mdi:keyboard-space$$', h: Symbol | RGB, type: held}
+  - {type: held}
   - {t: '$$mdi:keyboard-return$$', h: Symbol | RGB, type: held alternate}
   - {t: '=', h: FN | BT | Bootloader | Media, s: +, type: held alternate}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
