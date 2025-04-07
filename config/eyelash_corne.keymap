@@ -6,80 +6,55 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
-
 /*
-
    &mmv_input_listener {
        input-processors = <&zip_xy_scaler 2 1>;
    };
-
    &msc_input_listener {
        input-processors = <&zip_xy_scaler 2 1>;
    };
-
  */
-
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
-
 / {
     behaviors {
         c-copy:
-
         v_paste: v_paste {
             compatible = "zmk,behavior-tap-dance";
             label = "V_PASTE";
             #binding-cells = <0>;
             bindings = <&kp V>, <&kp K_PASTE>;
         };
-
         c-copy:
-
         copy: c-copy {
-            compatible = "zmk,behavior-tap-dance";
-            bindings = <&kp C>, <&kp K_COPY>;
+             compatible = "zmk,behavior-tap-dance";
+             bindings = <&kp C>, <&kp K_COPY>;
+         };
+
+         caps_ctrl: caps_ctrl {
+             compatible = "zmk,behavior-hold-tap";
+             label = "CAPS_CTRL";
+             bindings = <&kp>, <&caps_word>;
+
+             #binding-cells = <2>;
+             tapping-term-ms = <50>;
+             hold-while-undecided;
+         };
+     };
+
+     rgb_encoder: rgb_encoder {
+ @@ -61,10 +71,10 @@
+         default_layer {
+             display-name = "QWERTY";
+             bindings = <
+ &kp GRAVE              &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+ &mt LEFT_CONTROL CAPS  &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+ &kp LCTRL              &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_COMMAND ENTER
+                                      &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+             >;
+
+             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
-
-        caps_ctrl: caps_ctrl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CAPS_CTRL";
-            bindings = <&kp>, <&caps_word>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <50>;
-            hold-while-undecided;
-        };
-    };
-
-    rgb_encoder: rgb_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-    };
-
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-        tap-ms = <30>;
-    };
-
-    keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            display-name = "QWERTY";
-            bindings = <
-&kp GRAVE              &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&mt LEFT_CONTROL CAPS  &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL              &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_COMMAND ENTER
-                                     &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-        };
-
         lower_layer {
             display-name = "NUMBER";
             bindings = <
@@ -88,10 +63,8 @@
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                                          &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
             >;
-
             sensor-bindings = <&scroll_encoder>;
         };
-
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
@@ -100,10 +73,8 @@
 &trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                     &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
             >;
-
             sensor-bindings = <&scroll_encoder>;
         };
-
         layer_3 {
             display-name = "Fn";
             bindings = <
@@ -112,7 +83,6 @@
 &trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
                                        &trans       &trans     &trans                                                                   &trans       &trans     &trans
             >;
-
             sensor-bindings = <&scroll_encoder>;
         };
     };
