@@ -163,36 +163,36 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - RGB EFF
   - RGB ON
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - RGB HUI
+  - RGB SAI
+  - RGB BRI
+  - RGB SPI
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - $$mdi:volume-off$$
-  - $$mdi:volume-low$$
-  - $$mdi:volume-high$$
-  - $$mdi:brightness-5$$
-  - $$mdi:brightness-7$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '`', h: LGUI, s: '~'}
-  - $$mdi:bluetooth-off$$
+  - '&bl BL_ON'
+  - '&bl BL_INC'
+  - '&bl BL_CYCLE'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - OUT BLE
-  - OUT USB
-  - '&studio_unlock'
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - {t: '`', h: LGUI, s: '~'}
+  - RGB OFF
+  - RGB HUD
+  - RGB SAD
+  - RGB BRD
+  - RGB SPD
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
-  - PREV
-  - PP
-  - NEXT
+  - '&bl BL_OFF'
+  - '&bl BL_DEC'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:progress-download$$
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {t: '-', h: CODE, s: _, type: held alternate}
-  - {t: '$$mdi:keyboard-space$$', h: Symbol | RGB, type: held}
-  - {t: '$$mdi:keyboard-return$$', h: Symbol | RGB, type: held alternate}
+  - {type: held}
   - {type: held alternate}
+  - {t: '=', h: FN | BT | Bootloader | Media, s: +, type: held alternate}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
