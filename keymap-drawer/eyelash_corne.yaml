@@ -176,7 +176,7 @@ layers:
   - $$mdi:brightness-5$$
   - $$mdi:brightness-7$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - $$mdi:progress-download$$
+  - {t: '`', h: LGUI, s: '~'}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - OUT BLE
