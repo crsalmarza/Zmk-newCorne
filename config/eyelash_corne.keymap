@@ -92,7 +92,7 @@
             display-name = "Symbol | RGB";
             bindings = <
 &mt ESC BSLH    &kp EXCL       &kp AT           &kp HASH        &kp DLLR         &kp PRCNT                                  &kp UP                &kp CARET   &kp AMPS     &kp ASTRK      &kp LPAR   &kp RPAR  &kp BSPC
-&rgb_ug RGB_EFF   &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp C_MUTE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRI_UP  &kp C_BRI_DN  &sys_reset
+&rgb_ug RGB_EFF   &rgb_ug ON  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp C_MUTE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRI_UP  &kp C_BRI_DN  &sys_reset
 &mt LGUI GRAVE  &bt BT_CLR      &none         &out OUT_BLE    &out OUT_USB  &studio_unlock  &kp SPACE                 &kp DOWN              &kp K_PREV   &kp K_PP           &kp K_NEXT       &none         &none         &bootloader
                                            &mt LCTRL LBKT  &lt 1 MINUS   &lt 3 SPACE                                                     &lt 3 ENTER  &trans             &mt RALT RBKT
              >;
