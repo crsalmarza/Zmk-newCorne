@@ -186,7 +186,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - '&bl BL_OFF'
   - '&bl BL_DEC'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: EXCEL, h: toggle}
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
