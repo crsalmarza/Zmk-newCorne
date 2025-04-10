@@ -42,11 +42,11 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {t: '-', h: CODE, s: _}
   - {t: '$$mdi:keyboard-space$$', h: Symbol | RGB}
-  - {t: '$$mdi:keyboard-return$$', h: Symbol | RGB}
+  - {t: '$$mdi:keyboard-return$$', h: EXCEL}
   - {t: '=', h: FN | BT | Bootloader | Media, s: +}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   CODE:
@@ -91,11 +91,11 @@ layers:
   - {t: '-', s: _}
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {type: held}
   - {t: '$$mdi:keyboard-space$$', h: Symbol | RGB}
-  - {t: '$$mdi:keyboard-return$$', h: Symbol | RGB}
+  - {t: '$$mdi:keyboard-return$$', h: EXCEL}
   - {t: '=', h: FN | BT | Bootloader | Media, s: +}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   FN | BT | Bootloader | Media:
@@ -124,8 +124,8 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
-  - $$mdi:brightness-5$$
   - $$mdi:brightness-7$$
+  - $$mdi:brightness-5$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
   - $$mdi:bluetooth-off$$
@@ -144,7 +144,7 @@ layers:
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {t: '-', h: CODE, s: _, type: held alternate}
   - {t: '$$mdi:keyboard-space$$', h: Symbol | RGB}
-  - {t: '$$mdi:keyboard-return$$', h: Symbol | RGB}
+  - {t: '$$mdi:keyboard-return$$', h: EXCEL}
   - {type: held}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   Symbol | RGB:
@@ -189,10 +189,59 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {t: '-', h: CODE, s: _, type: held alternate}
   - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:keyboard-return$$', h: EXCEL}
+  - {t: '=', h: FN | BT | Bootloader | Media, s: +, type: held alternate}
+  - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
+  EXCEL:
+  - {t: \, h: '$$mdi:keyboard-esc$$', s: '|'}
+  - {t: EXCEL, h: toggle}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: EXCEL, h: toggle}
+  - $$mdi:arrow-up-bold$$
+  - CUT
+  - COPY
+  - PASTE
+  - KP UNDO
+  - KP REDO
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
+  - KP MULTIPLY
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '=', s: +}
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-up-bold$$
+  - KP FIND
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - {t: '`', h: LGUI, s: '~'}
+  - {t: /, s: '?'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '-', s: _}
+  - $$mdi:keyboard-space$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '0', s: )}
+  - {t: ., s: '>', type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', h: Symbol | RGB, type: held alternate}
+  - {type: held}
   - {t: '=', h: FN | BT | Bootloader | Media, s: +, type: held alternate}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
