@@ -207,8 +207,8 @@ layers:
   - CUT
   - COPY
   - PASTE
-  - KP UNDO
-  - KP REDO
+  - UNDO
+  - REDO
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - KP MULTIPLY
@@ -221,7 +221,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-up-bold$$
-  - KP FIND
+  - $$mdi:apple-finder$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
