@@ -60,8 +60,8 @@
             bindings = <
 &mt ESC BSLH    &kp Q     &kp W    &kp E           &kp R        &kp T                                  &kp UP                &kp Y        &kp U        &kp I          &kp O      &kp P    &kp BSPC
 &kp TAB         &kp A     &kp S    &kp D           &kp F        &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J        &kp K          &kp L      &kp SEMI &kp SQT
-&mt LGUI GRAVE  &kp FSLH  &kp Z    &kp X           &kp C        &kp V        &kp SPACE                 &kp DOWN              &kp B        &kp N        &kp M          &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-                                   &mt LCTRL LBKT  &lt 1 MINUS  &lt 3 SPACE                                                  &lt 3 ENTER  &lt 2 EQUAL  &mt RALT RBKT
+&mt LGUI GRAVE  &kp FSLH  &kp Z    &kp X           &kp C        &kp V        &kp SPACE                 &kp DOWN              &kp B        &kp N        &kp M          &kp COMMA  &kp DOT  &mt RIGHT_SHIFT DELETE
+                                   &mt LCTRL LBKT  &lt 1 MINUS  &lt 3 SPACE                                                  &lt 4 ENTER  &lt 2 EQUAL  &mt RALT RBKT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
@@ -71,8 +71,8 @@
             bindings = <
 &mt ESC BSLH    &kp N1    &kp N2   &kp N3          &kp N4    &kp N5                                 &kp UP                &kp N6       &kp N7       &kp N8         &kp N9     &kp N0    &kp BSPC
 &kp TAB         &kp EXCL  &kp AT   &kp HASH        &kp DLLR  &kp PRCNT                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp CARET    &kp AMPS     &kp ASTRK      &kp DEL    &kp SEMI  &kp SQT
-&mt LGUI GRAVE  &kp FSLH  &kp Z    &kp X           &kp C     &kp V        &kp SPACE                 &kp DOWN              &kp LPAR     &kp RPAR     &kp MINUS      &kp COMMA  &kp DOT   &kp RIGHT_SHIFT
-                                   &mt LCTRL LBKT  &trans    &lt 3 SPACE                                                  &lt 3 ENTER  &lt 2 EQUAL  &mt RALT RBKT
+&mt LGUI GRAVE  &kp FSLH  &kp Z    &kp X           &kp C     &kp V        &kp SPACE                 &kp DOWN              &kp LPAR     &kp RPAR     &kp MINUS      &kp COMMA  &kp DOT   &mt RIGHT_SHIFT DELETE
+                                   &mt LCTRL LBKT  &trans    &lt 3 SPACE                                                  &lt 4 ENTER  &lt 2 EQUAL  &mt RALT RBKT
              >;
             sensor-bindings = <&scroll_encoder>;
         };
@@ -81,9 +81,9 @@
             display-name = "FN | BT | Bootloader | Media";
             bindings = <
 &kp F1       &kp F2          &kp F3        &kp F4          &kp F5        &kp F6                                    &kp UP                &kp F7       &kp F8             &kp F9           &kp F10       &kp F11       &kp F12
-&sys_reset   &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp C_MUTE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRI_UP  &kp C_BRI_DN  &sys_reset
+&sys_reset   &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp C_MUTE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRI_DN  &kp C_BRI_UP  &sys_reset
 &bootloader  &bt BT_CLR      &none         &out OUT_BLE    &out OUT_USB  &studio_unlock  &kp SPACE                 &kp DOWN              &kp K_PREV   &kp K_PP           &kp K_NEXT       &none         &none         &bootloader
-                                           &mt LCTRL LBKT  &lt 1 MINUS   &lt 3 SPACE                                                     &lt 3 ENTER  &trans             &mt RALT RBKT
+                                           &mt LCTRL LBKT  &lt 1 MINUS   &lt 3 SPACE                                                     &lt 4 ENTER  &trans             &mt RALT RBKT
             >;
             sensor-bindings = <&scroll_encoder>;
         };
@@ -91,12 +91,23 @@
         layer_3 {
             display-name = "Symbol | RGB";
             bindings = <
-&mt ESC BSLH    &kp EXCL         &kp AT           &kp HASH         &kp DLLR         &kp PRCNT                                  &kp UP                &kp CARET   &kp AMPS     &kp ASTRK      &kp LPAR   &kp RPAR  &kp BSPC
-&rgb_ug RGB_EFF &rgb_ug RGB_ON   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI                  &kp LEFT  &kp ENTER  &kp RIGHT  &bl BL_ON   &bl BL_INC   &bl BL_CYCLE   &none      &kp SEMI  &kp SQT
-&mt LGUI GRAVE  &rgb_ug RGB_OFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &kp SPACE                 &kp DOWN              &bl BL_OFF  &bl BL_DEC   &none          &kp COMMA  &kp DOT   &kp RIGHT_SHIFT
-                                                  &mt LCTRL LBKT   &lt 1 MINUS      &trans                                                           &trans      &lt 2 EQUAL  &mt RALT RBKT
+&mt ESC BSLH    &kp EXCL         &kp AT           &kp HASH         &kp DLLR         &kp PRCNT                                  &kp UP                &kp CARET    &kp AMPS     &kp ASTRK      &kp LPAR   &kp RPAR  &kp BSPC
+&rgb_ug RGB_EFF &rgb_ug RGB_ON   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI                  &kp LEFT  &kp ENTER  &kp RIGHT  &bl BL_ON    &bl BL_INC   &bl BL_CYCLE   &none      &kp SEMI  &kp SQT
+&mt LGUI GRAVE  &rgb_ug RGB_OFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &kp SPACE                 &kp DOWN              &bl BL_OFF   &bl BL_DEC   &none          &kp COMMA  &kp DOT   &mt RIGHT_SHIFT DELETE
+                                                  &mt LCTRL LBKT   &lt 1 MINUS      &trans                                                           &lt 4 ENTER  &lt 2 EQUAL  &mt RALT RBKT
              >;
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_4 {
+            display-name = "EXCEL";
+            bindings = <
+&mt ESC BSLH    &to 4            &kp N7   &kp N8   &kp N9   &tog 4                                 &kp UP                &kp K_CUT  &kp K_COPY   &kp K_PASTE    &kp KP_UNDO  &kp KP_REDO    &kp BSPC
+&kp TAB         &kp KP_MULTIPLY  &kp N4   &kp N5   &kp N6   &kp EQUAL                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp ENTER  &kp UP       &kp KP_FIND    &none        &kp SEMI &kp SQT
+&mt LGUI GRAVE  &kp FSLH         &kp N1   &kp N2   &kp N3   &kp MINUS    &kp SPACE                 &kp DOWN              &kp LEFT   &kp DOWN     &kp RIGHT      &kp COMMA    &kp DOT  &mt RIGHT_SHIFT DELETE
+                                          &kp N0   &kp DOT  &lt 3 SPACE                                                  &trans     &lt 2 EQUAL  &mt RALT RBKT
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
