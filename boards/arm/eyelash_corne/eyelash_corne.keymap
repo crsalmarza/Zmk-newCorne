@@ -49,19 +49,19 @@
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "2";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                       &trans            &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4                &trans  &mkp LCLK  &trans &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5  &kp C_MUTE            &trans            &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                         &kp RET    &trans     &trans
+&kp PG_UP  &none         &none       &none       &none       &none                           &trans            &none           &none        &none    &none       &none     &kp HOME
+&trans     &kp KP_1  　　&kp KP_2  　&kp KP_3  　&kp KP_4  　&kp KP_5  　             &trans  &mkp LCLK  &trans &kp KP_6  　    &kp KP_7     &kp KP_8 &kp KP_9  　&kp KP_0  &kp RCTRL  　
+&kp PG_DN  &none         &none       &none      &kp kp_plus &kp_minus  &kp C_MUTE            &trans            &kp kp_asterisk &kp kp_slash &none    &kp kp_dot  &kp none  &kp END
+                                    &trans     &trans     &kp SPACE                                            &trans    &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_3 {
-            display-name = "Fn";
+            display-name = "3";
             bindings = <
 &trans  &kp F1      &kp F2      &kp F3       &kp F4     &kp F5                         &trans            &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
 &trans  &trans      &mkp LCLK   &mkp MCLK    &mkp RCLK  &mkp MB4               &trans  &mkp LCLK  &trans &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
