@@ -30,7 +30,7 @@
 &kp LALT            &kp Q  &kp W      &kp E     &kp R  &kp T                              &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp RALT
 &mt LCTRL ESC      &kp A  &kp S      &kp D     &kp F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &mt RCTRL APP
 &kp LSHIFT          &kp Z  &kp X      &kp C     &kp V  &kp B      &kp LC(N0)             &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                                     &lt 3 TAB  &kp MUHENKAN  &lt 1 SPACE                                       &lt 2 ENTER  &kp HENKAN  &kp RGUI
+                                     &lt 3 TAB  &kp MUHENKAN  &lt 1 ENTER                                       &lt 2 SPACE  &kp HENKAN  &kp RGUI
             >;
 
          sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;  //  変更前　sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -39,13 +39,13 @@
         lower_layer {
             display-name = "1";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                &trans            &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                  &trans  &mkp LCLK  &trans &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF &kp C_MUTE            &trans            &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                  &kp INS          &kp DEL          &trans
+&kp LALT    &none  &none          &none      &none     &none                           &none             &none       &none       &none      &none      &none      &kp RALT
+&kp LCTRL   &none  &kp BLSH       &kp CIRC 　&kp BLSH  &&kp AT                 &trans  &mkp LCLK  &trans &kp LBKT    &kp RBKT    &kp MINUS  &kp EQUAL  &kp COLON  &kp RCTRL
+&kp LSHIFT  &none  &kp UNDERSCORE &kp TILDE  &kp PIPE  &kp GRAVE   &kp C_MUTE            &trans          &kp LCURLY  &kp RCURLY  $none      &none      &none      &kp RSHIFT
+                                         &none        &none        &trans                                &trans      $trans      $trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+          sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>; //  sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
