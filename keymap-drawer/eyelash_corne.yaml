@@ -16,8 +16,8 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td0'
   - {t: '&td_a', s: '&td_MA'}
-  - '&ht LCTRL S'
-  - '&ht LALT D'
+  - S
+  - D
   - '&ht LGUI F'
   - G
   - $$mdi:arrow-left-bold$$
