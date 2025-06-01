@@ -12,14 +12,11 @@
 
 
 // funciones para acceso con hold ant tap
-//#define HRML(k1,k2,k3,k4) &lt LSHFT k1  &lt LALT  k2  &lt LGUI  k3  &lt LCTRL  k4
-//#define HRMR(k1,k2,k3,k4) &ht RCTRL  k1 &ht RGUI k2  &ht RALT k3  &ht RSHFT  k4
+#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LCTRL  k2  &ht LALT  k3  &ht LGUI  k4
+#define HRMR(k1,k2,k3,k4) &ht RGUI  k1 &ht RALT k2  &ht RCTRL k3  &ht RSHFT  k4
 
-#define HRML(k1,k2,k3,k4) &lt LSHFT k1  &lt LCTRL  k2 &lt LALT  k3  &lt LGUI  k4
-#define HRMR(k1,k2,k3,k4) &lt RGUI  k1 &lt RALT k2  &lt RCTRL k3  &lt RSHFT  k4
-
-#define CAGL(k1,k2,k3) &lt LCTRL k1  &lt LALT k2  &lt LGUI  k3
-#define CAGR(k1,k2,k3) &lt LGUI  k1  &lt LALT k2  &lt LCTRL  k3
+#define CAGL(k1,k2,k3) &ht LCTRL k1  &ht LALT k2  &ht LGUI  k3
+#define CAGR(k1,k2,k3) &ht LGUI  k1  &ht LALT k2  &ht LCTRL  k3
 
 // === Macros para acentos y ñ (macOS U.S.) ===
 //1. Configuración de Tap Dance
@@ -301,6 +298,38 @@
 };
 
 
+#define SYM_SPC  &lt 2 SPACE
+//#define LCA_ENT  &mt LC(LALT) ENTER
+#define SFT_ENT  &ht RSHFT ENTER
+#define SFT_ESC  &ht RSHFT ESC
+#define ALT_ESC  &ht LALT ESC
+#define SFT_BSPC &ht RSHFT BSPC
+#define GUI_BSPC  &ht RGUI BSPC
+//#define GUI_TAB  &ht RGUI LG(TAB)
+#define GUI_ENT  &ht RGUI ENTER
+#define GUI_SPC  &ht RGUI SPACE
+#define CTL_TAB  &ht LCTRL TAB
+#define CTL_ESC  &ht LCTRL ESC
+#define CTL_ACUTE &ht LCTRL ACUTE
+#define CTL_SPC  &ht RCTRL SPACE
+#define SFT_Z  &ht LSHFT Z
+#define SFT_A  &ht LSHFT  &m_a 
+#define PRE  &kp C_PREV
+#define VDN  &kp C_VOL_DN
+#define VUP  &kp C_VOL_UP
+#define NXT  &kp C_NEXT
+#define PLP  &kp C_PP
+
+#define LFT  &kp LEFT
+#define DWN  &kp DOWN
+#define UPT  &kp UP
+#define RHT  &kp RIGHT
+
+//HRML(C_PREV   , C_VOL_DN , C_VOL_UP ,  C_NEXT  )
+#define NUM_TAB  &lt 1 TAB
+#define NUM_SPC  &lt 1 SPACE
+#define FUN_SPC  &lt 3 SPACE
+
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
@@ -358,9 +387,9 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB    &kp Q  &kp W  &m_e     &kp R  &kp T                               &kp UP                &kp Y        &m_u    &m_i      &m_o    &kp P     &kp BSPC
-&td0       &m_a   &kp S  &kp D  &ht LGUI F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C    &kp V  &kp B        &kp SPACE              &kp DOWN              &m_n        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 ENTER                                               &lt 3 SPACE  &mo 2  &kp RALT
+&td0       &m_a CAGL( S    , D   ,   F )  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  CAGR(   J  ,     K     ,  L )   &kp SEMI  SFT_ENT
+&kp LCTRL  &kp Z  &kp X  &kp C    &kp V  &kp B        &kp SPACE              &kp DOWN              &m_n        &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp SQT
+                         SFT_ESC  NUM_SPC  GUI_ENT                                               FUN_SPC  SYM_SPC  ALT_ESC
             >;
 
              sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
