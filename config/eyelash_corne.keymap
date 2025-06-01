@@ -347,8 +347,8 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &m_a  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp TAB    &kp Q  &kp W  &m_e     &kp R  &kp T                               &kp UP                &kp Y        &m_u    &m_i      &m_o    &kp P     &kp BSPC
+&td0       &m_a  CAGL( S ,   D    ,    F )  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &m_n        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &mo 1  &lt 3 ENTER                                               &lt 3 SPACE  &mo 2  &kp RALT
             >;
