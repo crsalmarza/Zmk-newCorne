@@ -18,7 +18,7 @@ layers:
   - {t: '&td_a', s: '&td_MA'}
   - S
   - D
-  - '&ht LGUI F'
+  - {t: F, h: LGUI}
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
