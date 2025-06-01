@@ -15,7 +15,7 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td0'
-  - A
+  - {t: '&td_a', s: '&td_MA'}
   - S
   - D
   - F
@@ -37,7 +37,7 @@ layers:
   - B
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
-  - N
+  - {t: '&td_n', s: '&td_MN'}
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
