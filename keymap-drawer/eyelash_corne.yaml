@@ -4,21 +4,21 @@ layers:
   - $$mdi:keyboard-tab$$
   - Q
   - W
-  - E
+  - {t: '&td_e', s: '&td_ME'}
   - R
   - T
   - $$mdi:arrow-up-bold$$
   - Y
-  - U
-  - I
-  - O
+  - {t: '&td_u', s: '&td_MU'}
+  - {t: '&td_i', s: '&td_MI'}
+  - {t: '&td_o', s: '&td_MO'}
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td0'
   - {t: '&td_a', s: '&td_MA'}
-  - S
-  - D
-  - F
+  - '&ht LCTRL S'
+  - '&ht LALT D'
+  - '&ht LGUI F'
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
