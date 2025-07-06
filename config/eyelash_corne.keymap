@@ -401,7 +401,7 @@
             display-name = "NUMBER";
             bindings = <
 &trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9      &kp N0    &kp BSPC
-&trans  &kp RIGHT     CAGL(LEFT          ,DOWN         ,UP  )        &kp HOME                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp END    CAGR(  N4               ,N5             ,N6 )       &kp PG_UP  &trans
+&trans  &kp LEFT     CAGL(DOWN            ,UP        ,RIGHT  )        &kp HOME                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp END    CAGR(  N4               ,N5             ,N6 )       &kp PG_UP  &trans
 &trans   PRE              VDN             VUP           NXT           PLP         &kp C_MUTE                      &mmv MOVE_DOWN                   &kp BSLH          &kp N1            &kp N2          &kp N3        &kp PG_DN  &trans
                                          &trans        &trans        &trans                                                                  &kp INS          &kp DEL          &trans
             >;
