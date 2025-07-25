@@ -386,9 +386,9 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &m_e     &kp R  &kp T                               &kp UP                &kp Y        &m_u    &m_i      &m_o    &kp P     &kp BSPC
-&td0       &m_a CAGL( S    , D   ,   F )  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  CAGR(   J  ,     K     ,  L )   &kp SEMI  SFT_ENT
-&kp LCTRL  &kp Z  &kp X  &kp C    &kp V  &kp B        &kp SPACE              &kp DOWN              &m_n        &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp SQT
+&kp TAB    &kp Q  &kp W  &m_e     &kp R  &kp T                               &kp UP                &kp Y        &m_u    &m_i      &m_o    &kp P     &kp SQT
+&td0       &m_a CAGL( S    , D   ,   F )  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  CAGR(   J  ,     K     ,  L )   &kp SEMI  &kp BSPC 
+&kp LCTRL  &kp Z  &kp X  &kp C    &kp V  &kp B        &kp SPACE              &kp DOWN              &m_n        &kp M  &kp COMMA  &kp DOT  &kp FSLH   SFT_ENT
                          SFT_ESC  NUM_SPC  GUI_ENT                                               FUN_SPC  SYM_SPC  ALT_ESC
             >;
 
@@ -400,9 +400,9 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9      &kp N0    &kp BSPC
-&trans  &kp LEFT     CAGL(DOWN            ,UP        ,RIGHT  )        &kp HOME                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp END    CAGR(  N4               ,N5             ,N6 )       &kp PG_UP  &trans
-&trans   PRE              VDN             VUP           NXT           PLP         &kp C_MUTE                      &mmv MOVE_DOWN                   &kp BSLH          &kp N1            &kp N2          &kp N3        &kp PG_DN  &trans
+&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9      &kp N0    &trans
+&trans  &kp LEFT     CAGL(DOWN            ,UP        ,RIGHT  )        &kp HOME                       &mmv MOVE_LEFT  &mkp LCLK    &mmv MOVE_RIGHT  &kp END    CAGR(  N4               ,N5             ,N6 )       &kp PG_UP  &trans
+&trans   PRE              VDN             VUP           NXT           PLP         &kp C_MUTE                      &mmv MOVE_DOWN                   &my_p          &kp N1            &kp N2          &kp N3        &kp PG_DN  &trans
                                          &trans        &trans        &trans                                                                  &kp INS          &kp DEL          &trans
             >;
 
